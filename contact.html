@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Contact Us</title>
+
+    <!-- jQuery Mobile -->
+    <link rel="stylesheet" href="jquery.mobile-1.4.5.min.css" />
+    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="jquery.mobile-1.4.5.min.js"></script>
+
+    <!-- Custom styles and scripts -->
+    <link rel="stylesheet" href="themeStyle.css">
+    <script src="mobileApp.js"></script>
+</head>
+
+<body>
+
+<header>
+    <img src="images/sageleaf.png" class="logo" alt="Sage Leaf Logo">
+    <h1>Contact Cinder & Sage</h1>
+</header>
+
+<div class="content">
+
+    <a href="home.html"
+       data-ajax="false"
+       class="custom-btn">
+       Back to Home
+    </a>
+
+    <p>
+        We'd love to hear about your favorite crafts and DIY interests!
+    </p>
+
+    <form>
+
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="experience">Crafting Experience:</label>
+        <select id="experience" name="experience">
+            <option>Beginner</option>
+            <option>Intermediate</option>
+            <option>Advanced</option>
+        </select>
+
+        <fieldset data-role="controlgroup">
+            <legend>Favorite Craft Type:</legend>
+
+            <label>
+                <input type="radio" name="craft" value="Painting">
+                Painting
+            </label>
+
+            <label>
+                <input type="radio" name="craft" value="Embroidery">
+                Embroidery
+            </label>
+
+            <label>
+                <input type="radio" name="craft" value="Candle Making">
+                Candle Making
+            </label>
+        </fieldset>
+
+        <label for="ideas">Project Ideas:</label>
+        <textarea id="ideas" name="ideas"></textarea>
+
+        <button type="button"
+                onclick="savePreferences()"
+                class="custom-btn">
+            Save Preferences
+        </button>
+
+    </form>
+
+</div>
+
+<footer>
+    © 2026 Cinder & Sage. All rights reserved.
+</footer>
+
+</body>
+</html>
